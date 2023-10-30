@@ -31,5 +31,8 @@ label house_porch_options:
                 "Fancy Restaurant":
                     jump fancy_restaurant
 
+                "Nevermind":
+                    jump house_porch_options
+
         "Attend the pride festival" if helped_sam_speech and helped_sam_outfit and helped_sam_rehearse:
             jump pride_festival

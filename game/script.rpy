@@ -68,6 +68,7 @@ label start:
 
 
     $ first_recording_studio_visit = False
+    $ learned_about_recording_studio_workshop = False
     $ completed_recording_studio_workshop = False
 
     #Helping Sam variables

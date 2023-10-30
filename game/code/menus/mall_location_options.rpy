@@ -19,3 +19,6 @@ label mall_location_options:
 
         "Salon":
             jump salon
+
+        "Go Home":
+            jump house_porch_options
