@@ -65,7 +65,9 @@ label start:
     $ player_name = "You"
     $ player_pronouns = "They/Their"
     $ sam_welcome_to_neighborhood = False
-    
+
+
+    $ first_recording_studio_visit = False
     $ completed_recording_studio_workshop = False
 
     #Helping Sam variables
