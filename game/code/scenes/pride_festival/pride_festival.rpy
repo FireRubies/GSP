@@ -52,3 +52,11 @@ label pride_festival:
         with fade
 
         pause 1.0
+
+        show sam smile
+        sam "So we're here! What do we wanna do now?"
+
+        michelle "Hmm. I'm not sure. There's so much stuff! What do you think [player_name]?"
+        
+        jump pride_festival_options
+        
