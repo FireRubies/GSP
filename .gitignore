@@ -533,3 +533,7 @@ CubismSdkForNative-4-*.zip
 /cg
 /.vscode/launch.json
 .vscode/settings.json
+renpy-graphviz-windows-4.0-amd64.exe
+renpy-graphviz.config
+renpy-graphviz.dot
+renpy-graphviz.png
