@@ -32,20 +32,15 @@ label visit_sam(event="normal_visit"):
                             "Choose to not help Sam."
 
                 "Chitchat":
-                    pass
-            
-            "You visit Sam and Michelle. You chit-chat for a bit and then head back to your house."
-
-
-        
-
+                    "You visit Sam and Michelle. You chit-chat for a bit and then head back to your house."
 
     if event == "recording_studio_workshop":
         #blah blah blah. convince Sam & M to attend recording studio workshop.
+        "meep"
         call recording_studio(event="sam_visit")
 
     if event == "after_journey":
-        #You & Sam & M return to Sam's house after the journey. Sam reflects on her experiences and thanks you for giving her inspiration.
+        "You & Sam & M return to Sam's house after the journey. Sam reflects on her experiences and thanks you for giving her inspiration."
 
         #Here the player can suggest that Sam collaborates with either Jordan or Max.
         #This decision also affects the main storyline.

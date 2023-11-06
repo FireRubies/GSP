@@ -67,7 +67,7 @@ label start:
     $ sam_welcome_to_neighborhood = False
 
 
-    $ first_recording_studio_visit = False
+    $ visited_recording_studio = False
     $ learned_about_recording_studio_workshop = False
     $ completed_recording_studio_workshop = False
 
@@ -83,6 +83,12 @@ label start:
     $ sam_dress = ""
 
     $ going_to_festival_with_sam = False
+
+    #Festival options
+
+    $ done_museum = False
+    $ done_quiz = False
+    $ done_wander = False
     
     jump house_porch_options
 

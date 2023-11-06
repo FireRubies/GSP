@@ -5,11 +5,18 @@ label recording_studio(event="normal_visit"):
     if event == "normal_visit":
         "You see various people milling around the Recording Studio. There's nothing of interest going on."
 
-    if event == "first_visit":
+    elif event == "first_visit":
+
+        $ visited_recording_studio = True
+
+        $ approached_desk = False
+        $ approached_room = False
+
         "You see various people standing around. There's an androgenous looking person singing in a small soundproof room to the side and someone writing on a desk near the entrance to the studio."
 
-        menu:
-            "Approach the desk":
+        menu recording_studio_options:
+            "Approach the desk" if not approached_desk:
+                $ approached_desk = True
                 "You get closer to the desk. A girl with piercings and bright hair turns to face you."
                 menu:
                     "Hi! I'm [player_name]! I'm just wandering around.":
@@ -27,15 +34,22 @@ label recording_studio(event="normal_visit"):
                                                     "Oooo thanks for leeting me know! Maybe I'll stop by.":
                                                         jordan "No problem! Hope to see you there!"
                                                         $ learned_about_recording_studio_workshop = True
+                                                        jump recording_studio_options
+
 
 
 
                 #Jordan
 
-            "Approach the small room":
+            "Approach the small room" if not approached_room:
+                $ approached_room = True
                 "You go close to the small room."
+                jump recording_studio_options
 
                 #Max
+
+            "Leave the studio" if approached_desk:
+                pass
 
 
         #Have Max use Jordan's birth name here by accident. Show how Max apologizes and moves on. No need to make a big deal about it.
@@ -46,8 +60,8 @@ label recording_studio(event="normal_visit"):
         #they're having a workshop soon. After knowing this information if u visit
         #Sam and Michelle you end up giving them this information and then you all go to the workshop.
 
-        if event == "sam_visit":
-            "You and Sam & Michelle visit the workshop. Sam gains insight on incorporating her gender identity and stuff into her music. Everyone meets Max. Everyone meets Jordan. After the workshop, Sam expresses a desire to visit places from her past to reconnect with her past self. You accompany her & michelle on this journey."
-            jump closet
+    elif event == "sam_visit":
+        "You and Sam & Michelle visit the workshop. Sam gains insight on incorporating her gender identity and stuff into her music. Everyone meets Max. Everyone meets Jordan. After the workshop, Sam expresses a desire to visit places from her past to reconnect with her past self. You accompany her & michelle on this journey."
+        jump closet
 
     jump mall_location_options

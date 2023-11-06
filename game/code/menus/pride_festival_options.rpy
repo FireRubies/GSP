@@ -1,13 +1,13 @@
 menu pride_festival_options:
-    "Wander around":
+    "Wander around" if not done_wander:
+        jump wander
         # random encounters
-    "Go to a booth":
+    "Go to a booth" if not done_quiz or not done_museum:
         menu:
-            "The Quiz":
-                # lgbtq+ quiz on terms and stuff
-            "The Musuem":
-                # A big booth detailing history stuff
-    "The Stage":
-        #The place where Sam performs her speech & song thing. Have
-        #this become accessible after the player has explored all
-        #the booths
+            "The Quiz" if not done_quiz:
+                jump quiz
+            "The Musuem" if not done_museum:
+                jump museum
+                
+    "The Stage" if done_quiz and done_wander and done_museum:
+        jump stage

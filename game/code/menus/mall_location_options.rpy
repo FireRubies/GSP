@@ -7,7 +7,7 @@ label mall_location_options:
             jump grocer 
 
         "Recording Studio":
-            if first_recording_studio_visit == True:
+            if visited_recording_studio == False:
                 call recording_studio(event="first_visit")
             jump recording_studio
 

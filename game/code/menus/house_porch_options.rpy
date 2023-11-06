@@ -7,7 +7,7 @@ label house_porch_options:
             jump inside_house_options
         
         "Visit Sam" if has_slept and not first_neighbor_visit:
-            if learned_about_recording_studio_workshop and not attended_recording_studio_workshop:
+            if learned_about_recording_studio_workshop and not completed_recording_studio_workshop:
                 menu:
                     "Tell Sam & Michelle about the workshop.":
                         call visit_sam(event="recording_studio_workshop")

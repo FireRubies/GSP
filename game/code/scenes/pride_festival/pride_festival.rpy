@@ -57,6 +57,22 @@ label pride_festival:
         sam "So we're here! What do we wanna do now?"
 
         michelle "Hmm. I'm not sure. There's so much stuff! What do you think [player_name]?"
+
+        jump pride_festival_options
+
+    if not going_to_festival_with_sam:
         
+        scene driving to player house
+        with dissolve
+
+        pause 3
+
+        scene pride festival
+        with fade
+
+        pause 1.0
+
+        "You arrive at the festival. There are booths lining the streets, crowded with people."
+
         jump pride_festival_options
         
