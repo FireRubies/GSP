@@ -29,9 +29,10 @@ label sam_outfit:
 
     scene fashion store
 
-    sam "[sam_dress]"
+    show sam smile
+    sam "Ooo I see. I like that [sam_dress]!"
 
-    sam "Thanks for helping me choose a dress! Now onto the speech!"
+    sam "Thanks for helping me choose! Now onto the speech!"
 
     $ helped_sam_outfit = True
 
