@@ -3,6 +3,13 @@ Character sprites from Noraneko Games (Noranekokgames.itch.io)
 Music: Bensound.com/royalty-free-music
 License code: RFK3NYXWR5QBGZYC
 
+Used Renpy Graph Vizualiser from EwenQuim to visualize story branches.
+
+Research:
+
+LGBTQIA+ History
+https://www.harpercollege.edu/services/counseling/pdf/LGBTQ%20History%20Timeline.pdf
+
 Images:
 
 Player's House Inside
