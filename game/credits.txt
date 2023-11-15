@@ -7,7 +7,7 @@ Used Renpy Graph Vizualiser from EwenQuim to visualize story branches.
 
 Research:
 
-LGBTQIA+ History
+LGBTQIA+ History (for the museum)
 https://www.harpercollege.edu/services/counseling/pdf/LGBTQ%20History%20Timeline.pdf
 
 Images:

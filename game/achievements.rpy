@@ -155,7 +155,7 @@ define knower_of_boundaries = Achievement(
     id="knower_of_boundaries",
     description=_("You know when to back off."),
     unlocked_image=Transform("gui/window_icon.png", matrixcolor=BrightnessMatrix(-1.0)),
-    hidden=True, ## The important bit that hides the name and description
+    hide_description=True, ## The important bit that hides the description
 )
 
 define nosy_neighbor = Achievement(
@@ -163,7 +163,15 @@ define nosy_neighbor = Achievement(
     id="nosy_neighbor",
     description=_("You sometimes let your curiosity overwhelm you."),
     unlocked_image=Transform("gui/window_icon.png", matrixcolor=BrightnessMatrix(-1.0)),
-    hidden=True, ## The important bit that hides the name and description
+    hide_description=True, ## The important bit that hides the description
+)
+
+define asking_for_pronouns = Achievement(
+    name=_("Asking for Pronouns"),
+    id="asking_for_pronouns",
+    description=_("You recognize that you should ask people for their pronouns to avoid erronenous assumptions."),
+    unlocked_image=Transform("gui/window_icon.png", matrixcolor=BrightnessMatrix(-1.0)),
+    hide_description=True, ## The important bit that hides the description
 )
 
 define hidden_achievement = Achievement(
