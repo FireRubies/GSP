@@ -34,6 +34,8 @@ label start:
 
     #Overall notes. The players choices about discrimination and stuff throughout the story will affect the final ending. If the final ending turns out to be the pride parade the player's choices will be calculated and affect Sam's confidence.
 
+    jump dialogue_testing
+
     scene driving to player house
     with dissolve
 
