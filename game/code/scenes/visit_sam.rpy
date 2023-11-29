@@ -36,7 +36,29 @@ label visit_sam(event="normal_visit"):
 
     if event == "recording_studio_workshop":
         #blah blah blah. convince Sam & M to attend recording studio workshop.
-        "meep"
+        show michelle at right
+        show sam at left
+
+        you "Hey guys!"
+
+        show michelle smile
+        michelle "Hi!"
+
+        show sam smile
+        "Sam waves at you."
+
+        sam "What's up?"
+
+        you "Ah well I just went to the mall and I guess there's some kind of workshop happening there at the Recording Studio.
+        I figured I'd let you guys know about it and see if you wanted to come."
+
+        sam "Oooo that sounds great! When is it?"
+
+        you "Mmm I uh. I didn't actully check but Jordan said it was starting soon."
+
+        show sam frown
+        sam "Ah okay then we gotta hurry! Let's go!"
+
         call recording_studio(event="sam_visit")
 
     if event == "after_journey":

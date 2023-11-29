@@ -1,4 +1,5 @@
 label closet:
+    scene closet
     #Sam goes home & looks at old closet. She brought it from her old house.
     #It's the closet where she first tried on stereotypically feminine clothes.
 
@@ -12,4 +13,4 @@ label closet:
 
     #Add player comments here!
 
-    jump hospital
+    call visit_sam(event="after_journey")

@@ -100,21 +100,164 @@ label recording_studio(event="normal_visit"):
             "Leave the studio" if approached_desk:
                 pass
 
-
-        #Have Maxi use Jordan's birth name here by accident. Show how Maxi apologizes and moves on. No need to make a big deal about it.
-
-
-        #blah blah. If u visit here you see people making songs and stuff. like a non-binary singer and a pansexual lyricist.
-
-        #they're having a workshop soon. After knowing this information if u visit
-        #Sam and Michelle you end up giving them this information and then you all go to the workshop.
-
     elif event == "sam_visit":
-        "You and Sam & Michelle visit the workshop. Sam gains insight on incorporating her gender identity and stuff into her music. Everyone meets Max. Everyone meets Jordan. After the workshop, Sam expresses a desire to visit places from her past to reconnect with her past self. You accompany her & michelle on this journey."
         #"You and Sam & Michelle visit the workshop.
         #Sam gains insight on incorporating her gender identity and stuff into her music.
-        #Everyone meets Maxi. Everyone meets Jordan. After the workshop, Sam expresses a desire to visit places from her past to reconnect with her past self. You accompany her & michelle on this journey."
+        #Everyone meets Maxi. Everyone meets Jordan.
+        #After the workshop, Sam expresses a desire to visit places from her past
+        #to reconnect with her past self.
+        #You accompany her & michelle on this journey."
+
+        show sam smile at left
+        show michelle at right
+
+        sam "Phew. I haven't run that much in a while!"
+
+        "Michelle just stands there panting."
+
+        you "Y. Yeah that was quite the run!"
+
+        show jordan smile at center
+
+        jordan "Hey [player_name] you made it! Ooo and you brought Sam and ooooo Sam do you have a girlfriend now?"
+
+        sam "Yup! That's Michelle! It's been a bit Jordan! How have you been?"
+
+        jordan "I've been good! Lots of work- shops though. Hehe."
+
+        "Sam giggles quietly."
+
+        sam "It's good to see you haven't changed."
+
+        jordan "Hehe. Well I do believe it's time for the workshop!"
+
+        "Jordan claps her hands together."
+
+        jordan "Maxiiiiiiiii!"
+
+        show maxi at right
+        "A confused looking Maxi emerges from the the small room off to the side."
+
+        maxi "Yes Jordan?"
+
+        jordan "It's time for the workshop!"
+
+        menu:
+            "Yay!":
+                jordan "That's the right kinda energy! Yay!"
+
+                sam "Yay!"
+
+                michelle "Yay!"
+
+                maxi "..."
+            "Say nothing":
+                pass
+
+        jordan "Okay so Sam is there something specific you want help on?"
+
+        sam "Well I'm trying to write a song that incorporates aspects of my life into it.
+        Specifically gender identity stuff."
+
+        "Maxi smiles in approval."
+
+        jordan "That's a good idea!"
+
+        sam "Yeah well I have [player_name] to thank for that!"
+
+        jordan "Well it takes multiple eggs to make an omelet! I think...
+        Anyway collaboration is great!"
+
+        sam "Yeah! Mi is helping with the lyrics. I just can't think of what specifically to put in them.
+        I mean there's so much stuff and I only get about 2 minutes."
+
+        jordan "Hmmmm."
+
+        maxi "Do you have any places that are of significance of you that relate to that?"
+
+        "Sam thinks for a moment."
+
+        sam "Yeah. Lots! So you think I should go there and get some inspiration?"
         
-        jump closet
+        show maxi smile
+        maxi "Exactly!"
+
+        jordan "Great idea Maxi! And oooo it looks like someone else has arrived!"
+
+        "Liam waves at everyone."
+
+        liam "Heyo! I was just walking around the mall and figured I'd see what was going on here.
+        Oh. Names Liam by the way."
+
+        jordan "Welcome Liam! We're doing a workshop at the moment. Me and my friend Maxi here
+        try to help people with lyrics, music theory, etcetera."
+
+        liam "Oh I see. Well I don't really do much music stuff but that sounds cool!"
+
+        michelle "It is!"
+
+        liam "Nice! Thought so! Well what are you guys talkin' about now?"
+
+        jordan "We were just helping Sam and Michelle on their song."
+
+        liam "What kinda song?"
+
+        sam "It's like a personal gender identity educational motivational... thing."
+
+        "Michelle nods."
+
+        michelle "Yup that's it!"
+
+        "Liam chuckles."
+
+        liam "Sounds swaggy!"
+
+        menu:
+            "Swaggy?":
+                liam "Yeah!"
+
+            "Blank stare":
+                "Liam looks at you as you stare at him."
+
+                liam "What? Is it the swaggy? It just means cool basically. I heard it recently and can't stop saying it!"
+
+        michelle "Heh. That's pretty swaggy indeed!"
+
+        sam "The swaggiest!"
+
+        "Liam giggles."
+
+        liam "Yall are funny. I like that."
+
+        "Sam looks at her watch."
+
+        sam "Well we gotta run though if we wanna get through all of the memorable places today!
+        It was nice meeting you Sam and Maxi, and catching up with you Jordan of course."
+
+        "Michelle agrees with two thumbs up."
+
+        maxi "It was our pleasure!"
+
+        "Jordan nods."
+
+        liam "Nice meeting you too Sam and Michelle!"
+
+        jordan "Come back soon!"
+
+        sam "Definitely! We need to catch up more!"
+        #This line sets up the Fancy Restuarant scene later down the line. The player can choose to go to the fancy restaurant
+        #with Sam and Michelle and then Sam mentions bringing Jordan along because the more and the merrier and also Sam wants to
+        #catch up with Jordan. This dinner will give you more insight into Michelle as Sam and Jordan are busy talking. Show a lot
+        #about Michelle here. About her past and stuff. Make it cool and insightful and yeahhhh yay
+
+        sam "Okay so hmmm. I-. I guess we can go to my old school first..."
+
+        michelle "You sure?"
+
+        "Sam nods."
+
+        michelle "Okay then. Let's go."
+        
+        jump midde_school
 
     jump mall_location_options

@@ -1,5 +1,8 @@
 label hospital:
-
+    scene hospital
     "Sam & M & you visit the hospital where Sam got her gender-affirming care"
+    
 
-    jump middle_school
+    #Meet Jay here. Previously Caitlyn. FTM.
+
+    jump closet
