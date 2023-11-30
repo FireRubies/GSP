@@ -42,12 +42,18 @@ label opened_door:
 
         "She/Her":
             $ player_pronouns = "She/Her"
+            $ player_pronoun_subjective = "she"
+            $ player_pronoun_objective = "her"
 
         "He/Him":
             $ player_pronouns = "He/Him"
+            $ player_pronoun_subjective = "he"
+            $ player_pronoun_objective = "his"
 
         "They/Their":
-            $ player_pronouns = "They/Their"
+            $ player_pronouns = "They/them"
+            $ player_pronoun_subjective = "they"
+            $ player_pronoun_objective = "their"
 
     sam "It's nice to meet you [player_name]! Thanks for telling us your pronouns are [player_pronouns]!"
 

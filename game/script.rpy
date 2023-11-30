@@ -34,6 +34,19 @@ label start:
 
     #Overall notes. The players choices about discrimination and stuff throughout the story will affect the final ending. If the final ending turns out to be the pride parade the player's choices will be calculated and affect Sam's confidence.
 
+    label splashscreen:
+    scene black
+    with Pause(1)
+
+    show text "Trigger warnings: Genderphobia and genderphobic people." with dissolve
+    with Pause(2)
+
+    hide text with dissolve
+    with Pause(1)
+
+    return
+
+
     scene driving to player house
     with dissolve
 
@@ -63,7 +76,9 @@ label start:
     $ has_slept = False
     $ peeked_through_window = False
     $ player_name = "You"
-    $ player_pronouns = "They/Their"
+    $ player_pronouns = "They/Them"
+    $ player_pronoun_subjective = "they"
+    $ player_pronoun_objective = "their"
     $ sam_welcome_to_neighborhood = False
 
 

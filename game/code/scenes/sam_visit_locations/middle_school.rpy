@@ -10,8 +10,6 @@ label middle_school:
     "Michelle hugs Sam tightly."
 
     menu:
-        "Try to comfort Sam":
-            
         "Do nothing":
             "You stand there awkwardly, unsure of what to do.
             After a moment "
@@ -47,13 +45,47 @@ label middle_school:
             "You reach out and wrap your arms around Sam. Michelle soon joins you in hugging Sam."
 
             "As you both hug her she breaks down into tears."
-        "Stare at the locker too":
-            "You stare at the locker and hear Sam breaking down into tears."
-            
 
-    #Have a child character be here. Give the player the option to sidetrack a bit and help the child
-    #with issues at their school relating to inclusivity later!!! as in only visit for this storyline
-    #now but after the sam visiting stuff unlock the ability to travel to the hospital and the school
-    #in the menu!
+            "After a while she stops crying."
+
+            sam "T-thank you both... I. I needed that."
+            $ hug_it_out.grant();
+
+        "Stare at the locker too":
+            "You stare at the locker and hear Sam breaking down into tears. You look at see Michelle hugging her."
+
+            "After a while she stops crying."
+
+            sam "S-. Sorry about that. I didn't mean to breakdown like that."
+
+    sam "I-. I'd thought I'd gotten over all this stuff but I guess I didn't."
+
+    sam "Well... onto the hospital I guess?"
+
+    menu:
+        "Move on to the hospital":
+            you "Yeah if you're feeling up to it."
+
+            show sam smile
+            sam "Yeah. It's all uphill from here!"
+
+            michelle "That's my girl."
+
+        "Stay here":
+            #NOTE: Branching path here. Help Sam overcome her past. She'll do this anyway with the song but
+            #helping her out early will result in a more confident/powerful song :3
+            "branch path here. fill in later."
+
+            #NOTE: After helping Sam have there be yet another branching path! woot! Maybe make this a different
+            #line? like... the player can go to the playground or something after looking at the lockers
+            #with Sam and then that's where you discover the kid? Yeah.
+            #Have a child character be here. Give the player the option to sidetrack a bit and help the child
+            #with issues at their school relating to inclusivity later!!! as in only visit for this storyline
+            #now but after the sam visiting stuff unlock the ability to travel to the hospital and the school
+            #in the menu!
 
     jump hospital
+            
+
+
+    

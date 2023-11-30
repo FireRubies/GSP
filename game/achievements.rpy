@@ -174,6 +174,14 @@ define asking_for_pronouns = Achievement(
     hide_description=True, ## The important bit that hides the description
 )
 
+define hug_it_out = Achievement(
+    name=_("Hug it Out"),
+    id="hug_it_out",
+    description=_("You helped Sam feel better after the breakdown she had looking at her old middle school locker."),
+    unlocked_image=Transform("gui/window_icon.png", matrixcolor=BrightnessMatrix(-1.0)),
+    hide_description=True, ## The important bit that hides the description
+)
+
 define hidden_achievement = Achievement(
     name=_("Hidden Achievement"),
     id="hidden_achievement",
