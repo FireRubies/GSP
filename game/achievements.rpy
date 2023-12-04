@@ -85,27 +85,28 @@ image locked_achievement = Text("?")
 ## description to be tied to a specific save file, for example).
 ## The order you declare achievements in is the order they will appear in the
 ## achievement gallery, by default.
-define sample_achievement = Achievement(
-    ## The human-readable name, as it'll appear in the popup and in the gallery.
-    name=_("Sample Achievement"),
-    ## The id is used for Steam integration, and should match whatever ID
-    ## you have set up in the Steam backend (if using).
-    id="sample_achievement",
-    ## Description.
-    description=_("This is a sample achievement."),
-    ## The image used in the popup and in the gallery once this achievement
-    ## is unlocked.
-    unlocked_image="gui/window_icon.png",
-    ## By default all achievements use the "locked_achievement" image (declared
-    ## above), but if you wanted to provide a different image, this is how
-    ## you would specify it. It's used in the achievement gallery when the
-    ## achievement is locked.
-    locked_image="locked_achievement",
-    ## All achievements are hidden=False by default, but you can change it to
-    ## hidden=True if you'd like the title/description to show as ??? in the
-    ## achievement gallery. See Examples 3 and 4 for examples of this.
-    hidden=False,
-)
+
+# define sample_achievement = Achievement(
+#     ## The human-readable name, as it'll appear in the popup and in the gallery.
+#     name=_("Sample Achievement"),
+#     ## The id is used for Steam integration, and should match whatever ID
+#     ## you have set up in the Steam backend (if using).
+#     id="sample_achievement",
+#     ## Description.
+#     description=_("This is a sample achievement."),
+#     ## The image used in the popup and in the gallery once this achievement
+#     ## is unlocked.
+#     unlocked_image="gui/window_icon.png",
+#     ## By default all achievements use the "locked_achievement" image (declared
+#     ## above), but if you wanted to provide a different image, this is how
+#     ## you would specify it. It's used in the achievement gallery when the
+#     ## achievement is locked.
+#     locked_image="locked_achievement",
+#     ## All achievements are hidden=False by default, but you can change it to
+#     ## hidden=True if you'd like the title/description to show as ??? in the
+#     ## achievement gallery. See Examples 3 and 4 for examples of this.
+#     hidden=False,
+# )
 ## You can grant an achievement in-game with `$ sample_achievement.grant()`
 
 ## Example 2 ###################################################################

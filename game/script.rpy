@@ -37,9 +37,9 @@ label start:
     label splashscreen:
     scene black
     with Pause(1)
+    show text "Trigger warnings: Scenes involving derogatory language, genderphobic people, and genderphobia." with dissolve
+    with Pause(3)
 
-    show text "Trigger warnings: Genderphobia and genderphobic people." with dissolve
-    with Pause(2)
 
     hide text with dissolve
     with Pause(1)
