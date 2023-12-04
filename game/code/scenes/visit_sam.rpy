@@ -60,12 +60,6 @@ label visit_sam(event="normal_visit"):
         sam "Ah okay then we gotta hurry! Let's go!"
 
         call recording_studio(event="sam_visit")
-
-    if event == "after_journey":
-        "You & Sam & M return to Sam's house after the journey. Sam reflects on her experiences and thanks you for giving her inspiration."
-
-        #Here the player can suggest that Sam collaborates with either Jordan or Max.
-        #This decision also affects the main storyline.
-        $ completed_recording_studio_workshop = True
+        
     
     jump house_porch_options

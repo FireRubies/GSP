@@ -1,7 +1,6 @@
 label closet:
     scene closet
 
-    $ closet_choices = 0
     #Sam goes home & looks at old closet. She brought it from her old house.
     #It's the closet where she first tried on stereotypically feminine clothes.
 
@@ -57,16 +56,92 @@ label closet:
         "So when did you get your first dress?":
             sam "Hmm. It must've been something like... mmm. 5 years ago?"
 
-            you "Ah so it's been a while then!"
+            you "Ah so it's been a few years."
 
-            #sam yes it has been
+            sam "Yup!"
 
             menu:
                 "I thought transgender people were usually diagnosed young?":
-                    #sam spits facts here about how that's not entirely correct
+                    show sam smile
+                    sam "Ah yeah that's what most people think but really people can come out of their egg at any point."
+
+                    "Michelle nods"
+
+                    menu:
+                        "Egg?":
+                            $ closet_choices += 0.25
+                            sam "Ah it's what we in the community call someone who doesn't realize they're trans yet."
+
+                            you "Ohhhhh okay. Thanks for the explanation."
+
+                            sam "No problem!"
+
+                        "Ah okay":
+                            you "Ah okay."
+
+                    
 
                 "5 years? Hmm. That's not a while. Are you sure you're trans?":
                     $ closet_choices -= 1
+
+                    show sam frown
+                    show michelle frown
+
+                    sam "Yes... very. Anyway I didn't say I came out of my egg then. Regardless it's offensive to ask that."
+
+        "So this is where you keep all your clothes?":
+            $ closet_choices += 0.25
+
+            "Sam giggles."
+
+            sam "Of course not silly. I have another closet in my room. One closet wouldn't be enough."
+
+            you "Wow that's a lot of clothes!"
+
+            sam "Of course! Casual wear, party wear, clothing for cold weather, clothing for hot weather, school wear, swimsuits, etc."
+
+            you "Ah.. I see."
+
+            "Michelle snorts soflty off to the side."
+
+            michelle "Sam really likes her clothing."
+            
+            sam "Yes I do!"
+
+    #possible insertion of collab between Sam & Jordan or Maxi here. Add if you have time.
+
+    "Sam looks at the closet and closes her eyes, reminiscing on her past."
+
+    "You and Michelle share a glance as Sam does this and you both quietly tiptoe out of the room to let her process."
+
+    #Add different dialogues here based on the player's 'closet_choice' score!
+    # Less than or equal to 0.5 is a bad dialogue ending
+    # Greater than or equal to 0.5 is a good dialogue ending
+    # also have a variable called good_closet_ending be either true or false
+    # depending on the result here. This is so you can use that variable
+    # in future story dialogue options and branches!
+
+    scene sams house
+
+    show michelle smile at left
+
+    michelle "We can talk now. Thanks for... doing this. Even though you haven't known us long."
+
+    menu:
+        "You guys came to me first!":
+            you "Well you guys came to me first and offered to give me help with stuff so it's only natural that I help you out too!"
+
+        "Of course! I love helping out my friends.":
+            you "Of course! I love helping out my friends."
+
+    "Michelle nods."
+
+    michelle """Well thanks again. Some of our previous neighbors haven't been as... accepting.
+    Anyway I better go back inside. It's getting dark and I wanna watch a movie with Sam before heading to bed. Talk later?"""
+
+    you "Definitely!"
+
+
 
 
 
@@ -77,5 +152,5 @@ label closet:
     # All bad comments - horrible ending
 
     #Add player comments here!
-
-    call visit_sam(event="after_journey")
+    $ completed_recording_studio_workshop = True
+    jump house_porch_options

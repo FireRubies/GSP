@@ -104,6 +104,9 @@ label start:
     $ done_museum = False
     $ done_quiz = False
     $ done_wander = False
+
+    #Story impacters
+    $ closet_choices = 0
     
     jump house_porch_options
 
