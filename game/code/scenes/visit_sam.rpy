@@ -5,34 +5,50 @@ label visit_sam(event="normal_visit"):
     if event == "normal_visit":
         
         if completed_recording_studio_workshop:
-            menu:
-                "Talk to Sam about how her song is going":
-                    sam "Sam says it's going well blah blah blah. She mentions there's a Pride event coming up soon and that she wants to perform the song she's been working on with Michelle there."
-                    menu:
-                        "Help Sam":
-                            "You decide to help Sam"
-                            show sam smile
-                            sam "Great! Thanks so much! "
+            if not handled_closet_badly and not made_michelle_angry:
+                menu sam_event_preparations_menu:
+                    "Talk to Sam about how her song is going":
+                        sam "Sam says it's going well blah blah blah. She mentions there's a Pride event coming up soon and that she wants to perform the song she's been working on with Michelle there."
+                        menu:
+                            "Help Sam":
+                                "You decide to help Sam"
+                                show sam smile
+                                sam "Great! Thanks so much! "
 
-                            show sam neutral
-                            you "Of course! How can I help?"
+                                show sam neutral
+                                you "Of course! How can I help?"
 
-                            show sam smile
-                            sam "Well right now I think I need help with rehearsing, choosing an outfit, and writing some sort of speech."
+                                show sam smile
+                                sam "Well right now I think I need help with rehearsing, choosing an outfit, and writing some sort of speech."
 
-                            menu:
-                                "Let's do some rehearsing first.":
-                                    you "Let's do some rehearsing first."
-                                    
-                                    sam "Sounds good to me!"
+                                menu:
+                                    "Let's do some rehearsing first.":
+                                        you "Let's do some rehearsing first."
+                                        
+                                        sam "Sounds good to me!"
 
-                                    jump sam_rehearsal
+                                        jump sam_rehearsal
 
-                        "Don't help Sam":
-                            "Choose to not help Sam."
+                            "Don't help Sam":
+                                "Choose to not help Sam."
 
-                "Chitchat":
-                    "You visit Sam and Michelle. You chit-chat for a bit and then head back to your house."
+                    "Chitchat":
+                        "You visit Sam and Michelle. You chit-chat for a bit and then head back to your house."
+
+            else if handled_closet_badly or made_michelle_angry:
+                menu:
+                    "Apologize to Sam" if handled_closet_badly and not made_michelle_angry:
+                        #NOTE: Fill this in later.
+                        "You apologize to Sam"
+                        $ handled_closet_badly = False
+
+                    "Apologize to Sam & Michelle" if handled_closet_badly and made_michelle_angry:
+                        #NOTE: Fill this in later.
+                        "You apologize to Sam & Michelle"
+                        $ handled_closet_badly = False
+                        $ made_michelle_angry = False
+
+                jump sam_event_preparations_menu
 
     if event == "recording_studio_workshop":
         #blah blah blah. convince Sam & M to attend recording studio workshop.

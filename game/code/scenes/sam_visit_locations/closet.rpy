@@ -114,7 +114,7 @@ label closet:
 
     "You and Michelle share a glance as Sam does this and you both quietly tiptoe out of the room to let her process."
 
-    #Add different dialogues here based on the player's 'closet_choice' score!
+    # NOTE: Add different dialogues here based on the player's 'closet_choice' score!
     # Less than or equal to 0.5 is a bad dialogue ending
     # Greater than or equal to 0.5 is a good dialogue ending
     # also have a variable called good_closet_ending be either true or false
@@ -123,33 +123,72 @@ label closet:
 
     scene sams house
 
-    show michelle smile at left
+    if closet_choice >= 0:
+        show michelle smile at left
 
-    michelle "We can talk now. Thanks for... doing this. Even though you haven't known us long."
+        michelle "We can talk now. Thanks for... doing this. Even though you haven't known us long."
 
-    menu:
-        "You guys came to me first!":
-            you "Well you guys came to me first and offered to give me help with stuff so it's only natural that I help you out too!"
+        menu:
+            "You guys came to me first!":
+                you "Well you guys came to me first and offered to give me help with stuff so it's only natural that I help you out too!"
 
-        "Of course! I love helping out my friends.":
-            you "Of course! I love helping out my friends."
+            "Of course! I love helping out my friends.":
+                you "Of course! I love helping out my friends."
 
-    "Michelle nods."
+        "Michelle nods."
 
-    michelle """Well thanks again. Some of our previous neighbors haven't been as... accepting.
-    Anyway I better go back inside. It's getting dark and I wanna watch a movie with Sam before heading to bed. Talk later?"""
+        michelle """Well thanks again. Some of our previous neighbors haven't been as... accepting.
+        Anyway I better go back inside. It's getting dark and I wanna watch a movie with Sam before heading to bed. Talk later?"""
 
-    you "Definitely!"
+        you "Definitely!"
+    
+    else if closet_choice < 0:
+        $ handled_closet_badly = True
+        show michelle frown at left
 
+        michelle "We can talk now. What was that?"
 
+        menu:
+            "What was what?":
+                michelle "That! Why were you so rude?!"
 
+                menu:
+                    "Rude?":
+                        you "What do you mean?"
 
+                    "I'm sorry! I wasn't trying to be rude.":
+                        you "I'm sorry! I wasn't trying to be rude! I just kept slipping up..."
 
-    #All good comments - great ending
-    #Mostly good comments - good ending
-    # Half & Half - okay ending
-    # Mostly bad comments - bad ending
-    # All bad comments - horrible ending
+                        michelle "Mhm. You definitely did. You have to make this up to Sam somehow."
+
+                        #Add a thing here where the player has the option to make it up to Sam.
+                        #If the player chooses not to then the story continues but Sam doesn't show up
+                        #on stage during the pride festival event.
+                        #Also all stuff involving Michelle & Sam is locked until the player makes it up to Sam
+
+            "I don't know. I wasn't trying to be offensive.":
+
+                michelle "Well you were! You have to make this up to Sam somehow!"
+            
+            "I dunno.":
+
+                michelle "You don't know??? Questioning her about whether HER perception of her gender was correct?!"
+
+                menu:
+                    "Ah. Jeez. I didn't realize what I was doing...":
+
+                        michelle "Clearly!"
+
+                        michelle "You have to make this up to Sam somehow!"
+
+                    "Well she's wrong!":
+                        $ made_michelle_angry = True
+                        #If the player chooses this option then Sam doesn't show up to the pride event either.
+                        #Also all stuff involving Michelle & Sam is locked!
+
+                        michelle "Get out."
+
+                        michelle "NOW!"
 
     #Add player comments here!
     $ completed_recording_studio_workshop = True

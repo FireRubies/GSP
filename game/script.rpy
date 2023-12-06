@@ -107,6 +107,8 @@ label start:
 
     #Story impacters
     $ closet_choices = 0
+    $ handled_closet_badly = False
+    $ made_michelle_angry = False
     
     jump house_porch_options
 

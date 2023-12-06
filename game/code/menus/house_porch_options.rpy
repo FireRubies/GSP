@@ -34,5 +34,5 @@ label house_porch_options:
                 "Nevermind":
                     jump house_porch_options
 
-        "Attend the pride festival" if helped_sam_speech and helped_sam_outfit and helped_sam_rehearse:
+        "Attend the pride festival" if (helped_sam_speech and helped_sam_outfit and helped_sam_rehearse) or (handled_closet_badly):
             jump pride_festival
