@@ -3,7 +3,6 @@ label visit_sam(event="normal_visit"):
     scene sams house
 
     if event == "normal_visit":
-        
         if completed_recording_studio_workshop:
             if not handled_closet_badly and not made_michelle_angry:
                 menu sam_event_preparations_menu:
@@ -35,23 +34,45 @@ label visit_sam(event="normal_visit"):
                     "Chitchat":
                         "You visit Sam and Michelle. You chit-chat for a bit and then head back to your house."
 
-            else if handled_closet_badly or made_michelle_angry:
+            elif handled_closet_badly or made_michelle_angry:
                 menu:
                     "Apologize to Sam" if handled_closet_badly and not made_michelle_angry:
-                        #NOTE: Fill this in later.
-                        "You apologize to Sam"
+                        show sam frown at left
+                        
+                        you """Hey uh. I just wanted to apologize for earlier. I don't know what came over me.
+                        I. I just wasn't thinking...
+                        I realize how offensive my words were now."""
+
+                        show sam neutral
+
+                        sam "It's okay... just don't do it again!!!! Seriously!"
+
+                        you "Yes mam!"
+
                         $ handled_closet_badly = False
 
                     "Apologize to Sam & Michelle" if handled_closet_badly and made_michelle_angry:
+                        show sam frown at left
+                        show michelle frown at center
                         #NOTE: Fill this in later.
-                        "You apologize to Sam & Michelle"
+                        you """Hey uh. I just wanted to apologize for earlier. I don't know what came over me.
+                        I. I just wasn't thinking...
+                        I realize how offensive my words were now."""
+
+                        show sam neutral
+
+                        sam "It's okay... just don't do it again!!!! Seriously!"
+
+                        you "Yes mam!"
+
+                        michelle "Hmph. Well... if Sam forgives you that's good enough for me..."
+
                         $ handled_closet_badly = False
                         $ made_michelle_angry = False
 
                 jump sam_event_preparations_menu
 
     if event == "recording_studio_workshop":
-        #blah blah blah. convince Sam & M to attend recording studio workshop.
         show michelle at right
         show sam at left
 

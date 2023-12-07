@@ -12,6 +12,10 @@ label lgbtqia_plus_history:
             the LGBTQ community to riot for six days. The protest through the streets of New
             York City is memorialized as the annual Gay Pride parades that are now celebrated
             around the world. "
+            if not seen_stonewall_riots:
+                $ seen_stonewall_riots = True
+                $ history_lover.add_progress(1)
+
             jump lgbtqia_plus_history_options
 
         "Harvey Milk (1930-1978)":
@@ -24,6 +28,10 @@ label lgbtqia_plus_history:
             range of human rights, environmental, labor, and neighborhood issues. During his
             tenure as supervisor, he helped pass a gay rights ordinance for the city of San
             Francisco that prohibited anti-gay discrimination in housing and employment."
+            if not seen_harvey_milk:
+                $ seen_harvey_milk = True
+                $ history_lover.add_progress(1)
+            
             jump lgbtqia_plus_history_options
 
         "National March on Washington for Lesbian and Gay Rights (1979)":
@@ -33,6 +41,10 @@ label lgbtqia_plus_history:
 
             "The LGBTQ community and its allies have marched on the nation's capital on numerous
             occasions, beginning with a march and rally that took place on October 14, 1979. "
+            if not seen_national_march:
+                $ seen_national_march = True
+                $ history_lover.add_progress(1)
+            
             jump lgbtqia_plus_history_options
 
         "The HIV/AIDS Epidemic (1980s)":
@@ -49,6 +61,10 @@ label lgbtqia_plus_history:
             "However, as celebrities like Rock Hudson and Freddie Mercury revealed that they had the
             disease, and Magic Johnson came forward with HIV, and dedicated his retirement to
             educating others about the virus, attitudes began to change."
+            if not seen_hiv_aids_epidemic:
+                $ seen_hiv_aids_epidemic = True
+                $ history_lover.add_progress(1)
+            
             jump lgbtqia_plus_history_options
 
         "Don't Ask, Don't Tell and DOMA (1990s)":
@@ -84,6 +100,10 @@ label lgbtqia_plus_history:
             
             "to heterosexual married couples, and other laws that applied to
             heterosexual married couples"
+            if not seen_dont_ask_dont_tell:
+                $ seen_dont_ask_dont_tell = True
+                $ history_lover.add_progress(1)
+            
             jump lgbtqia_plus_history_options
 
         "Proposition 8 (2008-2013)":
@@ -105,6 +125,10 @@ label lgbtqia_plus_history:
             
             "Thus, Prop 8 was held unconstitutional and Governor Brown was free to
             permit same-sex marriages to recommence."
+            if not seen_proposition_8:
+                $ seen_proposition_8 = True
+                $ history_lover.add_progress(1)
+
             jump lgbtqia_plus_history_options
 
         "Obergefell v Hodges - Marriage Equality (2015)":
@@ -126,6 +150,10 @@ label lgbtqia_plus_history:
             to be condemned to live in loneliness, excluded from one of civilization's oldest
             institutions. They ask for equal dignity in the eyes of the law. The Constitution
             grants them that right.”'''
+            if not seen_obergefell_v_hodges:
+                $ seen_obergefell_v_hodges = True
+                $ history_lover.add_progress(1)
+
             jump lgbtqia_plus_history_options
 
         "Back to the main museum area":

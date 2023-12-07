@@ -110,17 +110,17 @@ image locked_achievement = Text("?")
 ## You can grant an achievement in-game with `$ sample_achievement.grant()`
 
 ## Example 2 ###################################################################
-define progress_achievement = Achievement(
-    name=_("Progress Achievement"),
-    id="progress_achievement",
-    description=_("This is an achievement with a progress bar."),
+define art_lover = Achievement(
+    name=_("Art Lover"),
+    id="art_lover",
+    description=_("You saw all the art at the museum!"),
     unlocked_image=Transform("gui/window_icon.png", matrixcolor=InvertMatrix()),
     ## To record progress, you need to specify a stat_max. This means you can
     ## show a progress bar with % completion towards the achievement. It is
     ## useful if, for example, you have an achievement counting how many
     ## chapters the player has completed which unlocks when they have seen all
     ## the chapters.
-    stat_max=12,
+    stat_max=3,
     ## You can also provide a stat_modulo, which means the achievement is only
     ## updated in the Steam backend every time the stat reaches a multiple of
     ## the modulo.
@@ -132,6 +132,9 @@ define progress_achievement = Achievement(
     ## complete for the achievement, but obviously 0.1% increments are pretty
     ## meaningless so you can either set stat_modulo=6 or stat_update_percent=1
     ## and it will update Steam every 6 steps or every 1%.
+
+    #Hides the achievement description
+    hide_description=True
 )
 ## To update progress towards completion of this achievement, you can use
 # $ progress_achievement.add_progress(1)
@@ -147,6 +150,24 @@ define progress_achievement = Achievement(
 # $ ending_achievement.progress(len(persistent.seen_endings))
 ## This will prevent the achievement from being added to multiple times if the
 ## player sees the same ending multiple times.
+
+define history_lover = Achievement(
+    name=_("History Lover"),
+    id="history_lover",
+    description=_("You read all the history at the museum!"),
+    unlocked_image=Transform("gui/window_icon.png", matrixcolor=InvertMatrix()),
+    stat_max=7,
+    hide_description=True
+)
+
+define important_info_lover = Achievement(
+    name=_("Important Info Lover"),
+    id="important_info_lover",
+    description=_("You read all the important info at the museum!"),
+    unlocked_image=Transform("gui/window_icon.png", matrixcolor=InvertMatrix()),
+    stat_max=10,
+    hide_description=True
+)
 
 ## Example 3 ###################################################################
 ## This achievement is "hidden", that is, its name and description appear as

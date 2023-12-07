@@ -109,10 +109,35 @@ label start:
     $ closet_choices = 0
     $ handled_closet_badly = False
     $ made_michelle_angry = False
+
+    #Museum Vars
+    #---Paintings
+    $ seen_the_transformation = False
+    $ seen_self_portrait = False
+    $ seen_the_pride_flag = False
+
+    #---History
+    $ seen_stonewall_riots = False
+    $ seen_harvey_milk = False
+    $ seen_national_march = False
+    $ seen_hiv_aids_epidemic = False
+    $ seen_dont_ask_dont_tell = False
+    $ seen_proposition_8 = False
+    $ seen_obergefell_v_hodges = False
+
+    #---Important Info
+    $ seen_respecting_pronouns = False
+    $ seen_heteronormativity = False
+    $ seen_gender_dysphoria = False
+    $ seen_bi_pan_polysexuality = False
+    $ seen_asexuality = False
+    $ seen_lgbtq_youth_homelessness = False
+    $ seen_microaggressions = False
+    $ seen_legal_protections = False
+    $ seen_elders_in_community = False
+    $ seen_global_variances = False
     
     jump house_porch_options
-
-
 
     #This ends the game.
     return

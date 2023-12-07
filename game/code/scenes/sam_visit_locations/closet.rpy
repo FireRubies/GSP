@@ -35,7 +35,7 @@ label closet:
 
         "Why's that matter?":
             $ closet_choices -= 0.5
-            you "Why's that matter?":
+            you "Why's that matter?"
 
             show sam frown
             show michelle frown
@@ -114,13 +114,6 @@ label closet:
 
     "You and Michelle share a glance as Sam does this and you both quietly tiptoe out of the room to let her process."
 
-    # NOTE: Add different dialogues here based on the player's 'closet_choice' score!
-    # Less than or equal to 0.5 is a bad dialogue ending
-    # Greater than or equal to 0.5 is a good dialogue ending
-    # also have a variable called good_closet_ending be either true or false
-    # depending on the result here. This is so you can use that variable
-    # in future story dialogue options and branches!
-
     scene sams house
 
     if closet_choice >= 0:
@@ -142,7 +135,7 @@ label closet:
 
         you "Definitely!"
     
-    else if closet_choice < 0:
+    elif closet_choice < 0:
         $ handled_closet_badly = True
         show michelle frown at left
 
@@ -190,6 +183,7 @@ label closet:
 
                         michelle "NOW!"
 
-    #Add player comments here!
+        you "Maybe I should visit Sam again and apologize..."
+
     $ completed_recording_studio_workshop = True
     jump house_porch_options
