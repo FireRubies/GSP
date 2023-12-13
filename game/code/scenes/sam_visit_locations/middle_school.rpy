@@ -11,8 +11,7 @@ label middle_school:
 
     menu:
         "Do nothing":
-            "You stand there awkwardly, unsure of what to do.
-            After a moment "
+            "You stand there awkwardly, unsure of what to do."
 
         "Ask what's wrong":
             you "What's wrong?"
@@ -83,6 +82,10 @@ label middle_school:
             #with issues at their school relating to inclusivity later!!! as in only visit for this storyline
             #now but after the sam visiting stuff unlock the ability to travel to the hospital and the school
             #in the menu!
+
+            menu:
+                "Move on to the hospital":
+                    jump hospital
 
     jump hospital
             

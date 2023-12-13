@@ -81,7 +81,7 @@ label recording_studio(event="normal_visit"):
                     you "Yeah Jordan! She was nice. Oh I'm [player_name] by the way.
                         Anyway apparently there's a workshop here soon. Figured I'd see if anyone else knew about it."
 
-                    maxi "Ah yeah there is! By the way Jordan use's They/Them pronouns."
+                    maxi "Ah yeah there is! By the way Jordan uses They/Them pronouns."
 
                     you "Ah okay, thanks for letting me know! Oh, and I use [player_pronouns] pronouns. You're Max right?"
 
@@ -258,6 +258,6 @@ label recording_studio(event="normal_visit"):
 
         michelle "Okay then. Let's go."
         
-        jump midde_school
+        jump middle_school
 
     jump mall_location_options

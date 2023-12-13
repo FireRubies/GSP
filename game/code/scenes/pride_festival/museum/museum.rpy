@@ -8,6 +8,9 @@ label museum:
             jump lgbtqia_plus_art
         "Important Info Section":
             jump lgbtqia_plus_important_info
+        "Leave the museum":
+            $ done_museum = True
+            jump pride_festival_options
     #TODO:
         #Art exhibits
         #History stuff
@@ -21,5 +24,3 @@ label museum:
 
 
     
-    $ done_museum = True
-    jump pride_festival_options

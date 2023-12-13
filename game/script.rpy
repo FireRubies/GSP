@@ -24,6 +24,16 @@
 #     Quest("item2.3", _("Item 3"), _("Category 2")),
 #     )
 
+# label splashscreen:
+#     scene black
+#     with Pause(1)
+#     show text "Trigger warnings: Scenes involving derogatory language, genderphobic people, and genderphobia." with dissolve
+#     with Pause(3)
+
+
+#     hide text with dissolve
+#     with Pause(1)
+
 label start:
     #show screen diary_open_btn
     #$ quest.load(arrival)
@@ -34,7 +44,6 @@ label start:
 
     #Overall notes. The players choices about discrimination and stuff throughout the story will affect the final ending. If the final ending turns out to be the pride parade the player's choices will be calculated and affect Sam's confidence.
 
-    label splashscreen:
     scene black
     with Pause(1)
     show text "Trigger warnings: Scenes involving derogatory language, genderphobic people, and genderphobia." with dissolve
@@ -43,9 +52,6 @@ label start:
 
     hide text with dissolve
     with Pause(1)
-
-    return
-
 
     scene driving to player house
     with dissolve

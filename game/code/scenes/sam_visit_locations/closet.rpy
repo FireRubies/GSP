@@ -44,6 +44,7 @@ label closet:
             menu:
                 "Ehh. Just seems like clothing to me.":
                     $ closet_choices -= 0.5
+                    "Michelle and Sam stare at you blankly."
                 
                 "Ah okay I see! Sorry for my ignorance there.":
                     $ closet_choices += 0.5
@@ -116,7 +117,7 @@ label closet:
 
     scene sams house
 
-    if closet_choice >= 0:
+    if closet_choices >= 0:
         show michelle smile at left
 
         michelle "We can talk now. Thanks for... doing this. Even though you haven't known us long."
@@ -135,7 +136,7 @@ label closet:
 
         you "Definitely!"
     
-    elif closet_choice < 0:
+    elif closet_choices < 0:
         $ handled_closet_badly = True
         show michelle frown at left
 
