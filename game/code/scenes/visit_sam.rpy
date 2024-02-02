@@ -54,7 +54,7 @@ label visit_sam(event="normal_visit"):
                     "Apologize to Sam & Michelle" if handled_closet_badly and made_michelle_angry:
                         show sam frown at left
                         show michelle frown at center
-                        #NOTE: Fill this in later.
+
                         you """Hey uh. I just wanted to apologize for earlier. I don't know what came over me.
                         I. I just wasn't thinking...
                         I realize how offensive my words were now."""

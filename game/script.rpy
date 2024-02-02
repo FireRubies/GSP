@@ -47,11 +47,10 @@ label start:
     scene black
     with Pause(1)
     show text "Trigger warnings: Scenes involving derogatory language, genderphobic people, and genderphobia." with dissolve
-    with Pause(3)
-
+    $ renpy.pause(3, hard=True)
 
     hide text with dissolve
-    with Pause(1)
+    $ renpy.pause(1, hard=True)
 
     scene driving to player house
     with dissolve
@@ -67,8 +66,6 @@ label start:
     #car door closing sound.
 
     show you at right
-
-    #NOTE: Implement inventory later on!
     # "You stop at your new house and get out of your car."
     # $ jane_inv = Inventory("Jane")
     # $ cookbook = list()
@@ -142,6 +139,13 @@ label start:
     $ seen_legal_protections = False
     $ seen_elders_in_community = False
     $ seen_global_variances = False
+
+    #---Wandering
+    $ wander_bob = False
+    $ wander_rainbow_cookie = False
+    $ wander_same_sex_marriage = False
+    $ wander_face_painting = False
+    $ wander_group_meditation
     
     jump house_porch_options
 

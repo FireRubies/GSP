@@ -219,7 +219,3 @@ label quiz:
         "There's more to explore! Keep learning about LGBTQIA+ information."
 
     jump pride_festival_options
-
-
-                    
-    

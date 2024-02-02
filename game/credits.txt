@@ -1,7 +1,6 @@
 Character sprites from Noraneko Games (Noranekokgames.itch.io)
 
-Music: Bensound.com/royalty-free-music
-License code: RFK3NYXWR5QBGZYC
+Music is called "Topical Summer Music" it's from Music Unlimited on Pixabay.
 
 Used Renpy Graph Vizualiser from EwenQuim to visualize story branches.
 
@@ -50,6 +49,9 @@ Peeking Through Window
 
 Pride Festival 
 "Atlanta Pride Festival parade" by Jason Riedy is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/?ref=openverse.
+
+Pride Festival Plaza
+"Tomelloso - Plaza de España 3" by Zarateman is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/deed.en?ref=openverse.
 
 Recording Studio 
 "Fame Recording Studios" by ralph and jenny is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/?ref=openverse.
