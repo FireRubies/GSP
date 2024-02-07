@@ -1,7 +1,9 @@
 label wander:
     $ done_wander = True
 
-    "You wander around... nothing happens."
-    #NOTE: Fill this in later!
+    if len(wanderable_places) < 1:
+        "You wander around but you can't find anything."
+    else:
+        $ renpy.jump(renpy.random.choice(wanderable_places))
 
     jump pride_festival_options

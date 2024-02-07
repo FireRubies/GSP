@@ -35,45 +35,7 @@
 #     with Pause(1)
 
 label start:
-    #show screen diary_open_btn
-    #$ quest.load(arrival)
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
-    #Overall notes. The players choices about discrimination and stuff throughout the story will affect the final ending. If the final ending turns out to be the pride parade the player's choices will be calculated and affect Sam's confidence.
-
-    scene black
-    with Pause(1)
-    show text "Trigger warnings: Scenes involving derogatory language, genderphobic people, and genderphobia." with dissolve
-    $ renpy.pause(3, hard=True)
-
-    hide text with dissolve
-    $ renpy.pause(1, hard=True)
-
-    scene driving to player house
-    with dissolve
-
-    pause 3
-
-    scene parked outside player house
-    with fade
-
-    pause 1.0
-
-    #Play car door opening sound and player gets out. Then play
-    #car door closing sound.
-
-    show you at right
-    # "You stop at your new house and get out of your car."
-    # $ jane_inv = Inventory("Jane")
-    # $ cookbook = list()
-    # $ eye = Item(name="Eyeball", desc="A human eyeball, how creepy!", value=250)
-    # $ jane_inv.take(eye, 5)
-    # show screen inventory_screen(jane_inv) 
-
-    #$ can_visit_sam = False
     $ first_neighbor_visit = True
     $ unpacked = False
     $ has_slept = False
@@ -141,11 +103,47 @@ label start:
     $ seen_global_variances = False
 
     #---Wandering
-    $ wander_bob = False
-    $ wander_rainbow_cookie = False
-    $ wander_same_sex_marriage = False
-    $ wander_face_painting = False
-    $ wander_group_meditation
+    $ wanderable_places = ["bob", "rainbow_cookie", "same_sex_marriage", "face_painting", "group_meditation"]
+    
+    #show screen diary_open_btn
+    #$ quest.load(arrival)
+
+    # Show a background. This uses a placeholder by default, but you can
+    # add a file (named either "bg room.png" or "bg room.jpg") to the
+    # images directory to show it.
+
+    #Overall notes. The players choices about discrimination and stuff throughout the story will affect the final ending. If the final ending turns out to be the pride parade the player's choices will be calculated and affect Sam's confidence.
+
+    scene black
+    with Pause(1)
+    show text "Trigger warnings: Scenes involving derogatory language, genderphobic people, and genderphobia." with dissolve
+    $ renpy.pause(3, hard=True)
+
+    hide text with dissolve
+    $ renpy.pause(1, hard=True)
+
+    scene driving to player house
+    with dissolve
+
+    pause 3
+
+    scene parked outside player house
+    with fade
+
+    pause 1.0
+
+    #Play car door opening sound and player gets out. Then play
+    #car door closing sound.
+
+    show you at right
+    # "You stop at your new house and get out of your car."
+    # $ jane_inv = Inventory("Jane")
+    # $ cookbook = list()
+    # $ eye = Item(name="Eyeball", desc="A human eyeball, how creepy!", value=250)
+    # $ jane_inv.take(eye, 5)
+    # show screen inventory_screen(jane_inv) 
+
+    #$ can_visit_sam = False
     
     jump house_porch_options
 

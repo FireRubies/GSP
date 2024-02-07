@@ -38,24 +38,31 @@ label opened_door:
     $ player_name = renpy.input("What is your name?", length=10).strip()
 
     menu:
-        "What are your pronouns?"
+        "Would you like to share your pronouns?"
+        
+        "Yes":
+            menu:
+                "She/Her":
+                    $ player_pronouns = "She/Her"
+                    $ player_pronoun_subjective = "she"
+                    $ player_pronoun_objective = "her"
 
-        "She/Her":
-            $ player_pronouns = "She/Her"
-            $ player_pronoun_subjective = "she"
-            $ player_pronoun_objective = "her"
+                "He/Him":
+                    $ player_pronouns = "He/Him"
+                    $ player_pronoun_subjective = "he"
+                    $ player_pronoun_objective = "his"
 
-        "He/Him":
-            $ player_pronouns = "He/Him"
-            $ player_pronoun_subjective = "he"
-            $ player_pronoun_objective = "his"
+                "They/Them":
+                    $ player_pronouns = "They/Them"
+                    $ player_pronoun_subjective = "they"
+                    $ player_pronoun_objective = "their"
 
-        "They/Their":
-            $ player_pronouns = "They/them"
+        "No":
+            $ player_pronouns = "They/Them"
             $ player_pronoun_subjective = "they"
             $ player_pronoun_objective = "their"
 
-    sam "It's nice to meet you [player_name]! Thanks for telling us your pronouns are [player_pronouns]!"
+    sam "It's nice to meet you [player_name]!"
 
     if player_pronouns == "She/Her":
 

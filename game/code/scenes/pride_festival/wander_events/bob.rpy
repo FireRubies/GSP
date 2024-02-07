@@ -2,7 +2,7 @@ label bob:
 
     #NOTE: Fill this in with LGBTQIA+ lessons and stuff later maybe?
 
-    $ wander_bob = True
+    $ wanderable_places.remove("bob")
 
     if going_to_festival_with_sam:
         show sam at right
@@ -20,6 +20,7 @@ label bob:
 
         "You approach Bob and engage in a conversation."
         scene pride festival plaza
+        show bob
 
         #NOTE: Maybe show a Bob character here????
         bob "Hey, it's great to see you all here! How's the festival been treating you?"
@@ -33,13 +34,15 @@ label bob:
         "After exchanging contact information with Bob, you continue to explore the festival together with Sam and Michelle."
     else:
         "As you wander around the festival grounds, you notice a guy smiling at you from a nearby booth."
+        scene pride festival plaza
+        show bob
 
         bob "Hey there! I'm Bob. Mind if I join you for a stroll around the festival?"
 
         bob "Of course! It's awesome meeting new people who share the love for pride festivals! How's your experience been so far?"
 
         menu:
-            "It's been amazing!"
+            "It's been amazing!":
                 you "It's been amazing! I've been having a blast. There's always so much energy here."
 
                 bob "I know right! Pride festivals always bring out the best vibes, don't they?"

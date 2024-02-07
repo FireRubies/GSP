@@ -16,7 +16,7 @@ label stage:
     if made_michelle_angry and handled_closet_badly:
         "Sam didn't show up... everyone leaves, confused and annoyed."
         
-    else if closet_choices > 1:
+    elif closet_choices > 1:
         sam """This song means a lot to me, and I'm thrilled to share it with all of you. I'm trans and I've been transitioning for a while now."
         It's been an incredible journey, and this song reflects a piece of that.
         I hope you all enjoy it!"""
@@ -77,7 +77,8 @@ label stage:
         A testament to strength and who we are, {w=1}{nw}
         In unity, let's celebrate the brave, {w=1}{nw}
         For in their light, all of us can be saved. {w=1}{nw}"""
-    else:
+        
+    elif closet_choices < 1:
         sam "T-. This song means a-. a lot to me. so-. so I hope you a-all en-enjoy it!"
 
         play music "tropical_summer_music.mp3"

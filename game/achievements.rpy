@@ -58,7 +58,7 @@ define myconfig.ACHIEVEMENT_CALLBACK = [
     ## This first example is an achievement which unlocks after two other
     ## achievements have been granted ("hidden_achievement" and
     ## "hidden_description").
-    LinkedAchievement(hidden3=['hidden_achievement', 'hidden_description']),
+    LinkedAchievement(museum_fanatic=['art_lover', 'history_lover', 'important_info_lover']),
     ## The second example is an achievement which unlocks after all achievements
     ## have been granted. This is a special case.
     LinkedAchievement(platinum_achievement='all'),
@@ -166,6 +166,14 @@ define important_info_lover = Achievement(
     description=_("You read all the important info at the museum!"),
     unlocked_image=Transform("gui/window_icon.png", matrixcolor=InvertMatrix()),
     stat_max=10,
+    hide_description=True
+)
+
+define museum_fanatic = Achievement(
+    name=_("Museum Fanatic"),
+    id="museum_fanatic",
+    description=_("You looked at everything in every exhibit!"),
+    unlocked_image=Transform("gui/window_icon.png", matrixcolor=InvertMatrix()),
     hide_description=True
 )
 

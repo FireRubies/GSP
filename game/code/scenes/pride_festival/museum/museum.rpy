@@ -11,16 +11,7 @@ label museum:
         "Leave the museum":
             $ done_museum = True
             jump pride_festival_options
-    #TODO:
-        #Art exhibits
-        #History stuff
-            #
-        #Have some of the history stuff here show up on the quiz
 
         #TODO: Achievements
             #Achievement for visiting each of the three different sections.
             #Achievement for going through every exhibit!!!
-
-
-
-    

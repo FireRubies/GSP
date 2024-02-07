@@ -1,6 +1,8 @@
 Character sprites from Noraneko Games (Noranekokgames.itch.io)
 
-Music is called "Topical Summer Music" it's from Music Unlimited on Pixabay.
+Sam's music is called "Topical Summer Music" it's from Music Unlimited on Pixabay.
+
+The meditation music is called "Wandering" it's from Pixabay on Pixabay.
 
 Used Renpy Graph Vizualiser from EwenQuim to visualize story branches.
 
@@ -52,6 +54,12 @@ Pride Festival
 
 Pride Festival Plaza
 "Tomelloso - Plaza de España 3" by Zarateman is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/deed.en?ref=openverse.
+
+Meditation Room
+"Meditation Room" by Editor B is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/?ref=openverse.
+
+Face Painting
+"NRCS NM Booth at the State Fair w Rainfall Simulator" by USDA NRCS New Mexico is marked with Public Domain Mark 1.0. To view the terms, visit https://creativecommons.org/publicdomain/mark/1.0/?ref=openverse.
 
 Recording Studio 
 "Fame Recording Studios" by ralph and jenny is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/?ref=openverse.

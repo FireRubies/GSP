@@ -67,3 +67,5 @@ label lgbtqia_plus_important_info:
     menu lgbtqia_plus_important_info_options:
         "Back to the main museum area":
             jump museum_options
+
+    #Add an achievement for getting all the exhibit achievements.
