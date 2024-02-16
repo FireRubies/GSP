@@ -66,7 +66,7 @@ label opened_door:
 
     if player_pronouns == "She/Her":
 
-        show michelle pout
+        show michelle frown
         sam "It's good to have another lady around!"
         
         show michelle blush
@@ -93,25 +93,27 @@ label opened_door:
 
     menu:
         "Are there any major aspects of your life that you could integrate into your songs?":
-            show sam nervous
+            show sam frown
             sam "I mean I could make a song about being trans I guess?"
 
             show michelle smile
             you "Yeah that would work! It could be educational too!"
 
-            show sam neutral
+            show sam smile
             "Sam glances at Michelle."
 
-            show sam smile
             sam "Yes I think that's a good idea. Mi could help too! She loves educating people about this stuff and she's great at it!"
 
             show michelle blush
             michelle "T-thanks Sam."
 
+            show michelle smile
             sam "Of course Mi!"
 
             "You can't help but smile at Sam & Michelle's wholesomeness."
 
+            show sam neutral
+            show michelle neutral
             sam "Well I guess we'll go start working on that! Thanks for helping me brainstorm [player_name]!"
 
             you "No problem! Anytime! It was nice meeting you both!"

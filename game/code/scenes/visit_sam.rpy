@@ -72,6 +72,9 @@ label visit_sam(event="normal_visit"):
 
                 jump sam_event_preparations_menu
 
+        else:
+            "You hang out with Sam and Michelle and chat for a bit. Then you head back home."
+
     if event == "recording_studio_workshop":
         show michelle at right
         show sam at left
