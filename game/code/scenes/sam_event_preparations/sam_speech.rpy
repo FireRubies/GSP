@@ -37,6 +37,8 @@ label sam_speech:
         "Yes":
             $ going_to_festival_with_sam = True
             you "Yeah sure! That sounds like a blast! When are we leaving?"
+
+            sam "Just let us know when you're ready."
         "No":
             you "Thanks for the offer! I'm gonna take my own car though."
 

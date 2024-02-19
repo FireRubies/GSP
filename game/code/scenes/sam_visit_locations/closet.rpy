@@ -62,8 +62,11 @@ label closet:
             sam "Yup!"
 
             menu:
+                "So what's your favorite clothing article?":
+                    sam "Oh well I really fancy cardigans."
+
                 "I thought transgender people were usually diagnosed young?":
-                    show sam smile
+                    $ closet_choice -= 0.25
                     sam "Ah yeah that's what most people think but really people can come out of their egg at any point."
 
                     "Michelle nods"

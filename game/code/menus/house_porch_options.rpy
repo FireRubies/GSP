@@ -10,7 +10,7 @@ label house_porch_options:
             if learned_about_recording_studio_workshop and not completed_recording_studio_workshop:
                 menu:
                     "Tell Sam & Michelle about the workshop.":
-                        call visit_sam(event="recording_studio_workshop")
+                        call visit_sam(event="recording_studio_workshop") from _call_visit_sam
                         
                     "Keep it to yourself.":
                         jump visit_sam

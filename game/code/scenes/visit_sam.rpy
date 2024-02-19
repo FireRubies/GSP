@@ -7,7 +7,16 @@ label visit_sam(event="normal_visit"):
             if not handled_closet_badly and not made_michelle_angry:
                 menu sam_event_preparations_menu:
                     "Talk to Sam about how her song is going":
-                        sam "Sam says it's going well blah blah blah. She mentions there's a Pride event coming up soon and that she wants to perform the song she's been working on with Michelle there."
+                        show sam smile
+                        sam "It's been going well! Thanks for asking!"
+
+                        you "Of course!"
+
+                        sam "Oh yeah there's a Pride event coming up soon.
+                        I was thinking of performing the song I've been working on with Mi there.
+                        I could use some help with the preparations though.
+                        Would you mind helping a neighbor out?"
+
                         menu:
                             "Help Sam":
                                 "You decide to help Sam"
@@ -99,7 +108,7 @@ label visit_sam(event="normal_visit"):
         show sam frown
         sam "Ah okay then we gotta hurry! Let's go!"
 
-        call recording_studio(event="sam_visit")
+        call recording_studio(event="sam_visit") from _call_recording_studio_1
         
     
     jump house_porch_options

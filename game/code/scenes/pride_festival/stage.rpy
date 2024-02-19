@@ -1,13 +1,8 @@
 label stage:
-    "The place where Sam will perform her speech and song and stuff."
-
-    "this is the final event in the game. After this... idk. give the player freedom to do the things they didn't do the first time"
 
     scene stage
 
-    show sam singing
-    show band_members
-
+    show sam
     "Sam walks onto the stage."
 
     sam "Hey everyone! Thank you all for being here tonight."

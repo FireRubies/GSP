@@ -21,7 +21,7 @@ label recording_studio(event="normal_visit"):
                 $ approached_desk = True
 
                 show jordan neutral
-                "You get closer to the desk. A girl with piercings and bright hair turns to face you."
+                "You get closer to the desk. A girl with piercings and pretty hair turns to face you."
                 menu:
                     "Hi! I'm [player_name]! I'm just wandering around.":
                         jordan "Oh hi! Pleased to meet you [player_name]! I'm Jordan!"
@@ -56,7 +56,7 @@ label recording_studio(event="normal_visit"):
             "Approach the small room" if not approached_room and approached_desk:
                 $ approached_room = True
 
-                show maxi neutral
+                show maxi neutral at left
                 "You go close to the small room. You see a androgenous looking figure inside the room."
 
                 "The person inside the room turns to look at you."
@@ -77,7 +77,7 @@ label recording_studio(event="normal_visit"):
 
                     maxi "Thanks! I'll start over, pleased to meet you [player_name]! Anyway the workshops, I help lead them with Jordan. Sh- They're really talented!"
 
-                else: 
+                else:
                     you "Yeah Jordan! She was nice. Oh I'm [player_name] by the way.
                         Anyway apparently there's a workshop here soon. Figured I'd see if anyone else knew about it."
 
@@ -131,7 +131,7 @@ label recording_studio(event="normal_visit"):
 
         jordan "Hehe. Well I do believe it's time for the workshop!"
 
-        "Jordan claps her hands together."
+        "Jordan claps their hands together."
 
         jordan "Maxiiiiiiiii!"
 

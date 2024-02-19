@@ -2,10 +2,7 @@ label sam_rehearsal:
     play music "sunny.mp3" loop
     $ sam_song = []
 
-#Change the song lyric optionsbased on what choices
-#the player has made in the story so far.
-#So when Sam makes a choice that affects the story add a thing to the array.
-    sam "[sam_song]"
+    "You and Sam rehearse for a bit."
 
     $ helped_sam_rehearse = True
 

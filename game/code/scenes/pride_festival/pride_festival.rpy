@@ -17,14 +17,14 @@ label pride_festival:
 
         "Mi emerges from the house."
 
-        show michelle
+        show michelle at left
         michelle "Hi [player_name]!"
 
         menu:
             "Hi! Nice outfit!":
                 you "Hi! Nice outfit!"
 
-                show michelle smile 
+                show michelle smile at left
                 michelle "Aw thanks!"
 
             "Hi!":
