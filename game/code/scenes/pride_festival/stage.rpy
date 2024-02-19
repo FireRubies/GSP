@@ -16,7 +16,7 @@ label stage:
         It's been an incredible journey, and this song reflects a piece of that.
         I hope you all enjoy it!"""
 
-        play music "tropical_summer_music.mp3"
+        play music "tropical_summer_music.mp3" volume 0.25
 
         """She walked along a winding road, {w=1}{nw}
         Searching for a love untold, {w=1}{nw}
@@ -76,7 +76,7 @@ label stage:
     elif closet_choices < 1:
         sam "T-. This song means a-. a lot to me. so-. so I hope you a-all en-enjoy it!"
 
-        play music "tropical_summer_music.mp3"
+        play music "tropical_summer_music.mp3" volume 0.25
 
         """She strolled down a lame old path, {w=1}{nw}
         Looking for love, facing the wrath, {w=1}{nw}
@@ -134,6 +134,8 @@ label stage:
         For in their light, like, all of us can be a little saved. {w=1}{nw}"""
 
         "Most of the audience cheered but it was less enthusiastic than it could've been."
+
+    stop music fadeout 1.0
 
     # Depending on previous choices, adjust the audience's reaction
     if closet_choices > 1:

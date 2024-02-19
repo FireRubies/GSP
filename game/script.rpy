@@ -34,6 +34,8 @@
 #     hide text with dissolve
 #     with Pause(1)
 
+define _scene_show_hide_transition = Dissolve(0.25)
+
 label start:
 
     $ first_neighbor_visit = True
