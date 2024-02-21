@@ -105,7 +105,7 @@ label start:
     $ seen_global_variances = False
 
     #---Wandering
-    $ wanderable_places = ["bob", "rainbow_cookie", "same_sex_marriage", "face_painting", "group_meditation"]
+    $ wanderable_places = ["bob", "rainbow_cookie", "face_painting", "group_meditation"]
     
     #show screen diary_open_btn
     #$ quest.load(arrival)

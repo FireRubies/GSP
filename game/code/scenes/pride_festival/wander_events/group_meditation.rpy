@@ -1,7 +1,5 @@
 label group_meditation:
 
-    
-
     scene group meditation
 
     if going_to_festival_with_sam:
