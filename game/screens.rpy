@@ -81,6 +81,29 @@ style frame:
 ## In-game screens
 ################################################################################
 
+# Feedback Screen
+
+screen feedback():
+    #Make this the top screen
+    zorder 10000000
+
+    style_prefix "centered"
+
+    hbox: 
+        xalign 0.5 
+        yalign 0.75   
+        frame: 
+            background Frame("/gui/frame.png", 5, 5,)
+            vbox: 
+                box_wrap True 
+                xalign 0.5 
+                yalign 0.5 
+                text "Hi! This popup won't show up again." size 30
+                text "Basically I'd just love if you gave me some feedback on the game." size 30
+                text "It's very very helpful!" size 30
+
+                textbutton "Open Google Form" action OpenURL("https://forms.gle/eFH32gC6wjZaQP7n9")
+                textbutton "No thank you!" action Hide("feedback")
 
 ## Say screen ##################################################################
 ##
@@ -320,6 +343,8 @@ screen navigation():
             textbutton _("Main Menu") action MainMenu()
 
         textbutton _("About") action ShowMenu("about")
+
+        textbutton _("Give Feedback") action OpenURL("https://forms.gle/eFH32gC6wjZaQP7n9")
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 

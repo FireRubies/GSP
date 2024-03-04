@@ -16,6 +16,9 @@ label recording_studio(event="normal_visit"):
 
         "You see various people standing around. There's an androgenous looking person singing in a small soundproof room to the side and someone writing on a desk near the entrance to the studio."
 
+        #Ask for user feedback
+        show screen feedback
+
         menu recording_studio_options:
             "Approach the desk" if not approached_desk:
                 $ approached_desk = True
