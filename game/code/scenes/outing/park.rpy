@@ -1,6 +1,21 @@
 label park:
     scene park
-    "Park"
+    "You see a beautiful park."
+
+    menu park_options:
+        "Jog around":
+            "You lace up your sneakers and set off on the jogging path.  Leaves crunch underfoot, and your breath plumes in the cool air."
+
+        "Go for a bike ride":
+            "The wind whips through your hair as you pedal down the bike trail.  Sunlight dapples through the trees."
+
+        "Just relax":
+            "You find a quiet spot beneath a shady tree.  Birdsong fills the air as you close your eyes and let the worries of the day melt away."
+
+        "Leave the park":
+            jump house_porch_options
+
+    jump park_options
 
     #At the park you can
     # sit on a bench

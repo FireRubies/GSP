@@ -70,10 +70,11 @@ label middle_school:
 
             michelle "That's my girl."
 
-        "Stay here":
+        "Wait for a bit":
+
+            "You wait for Sam to calm down quickly, then you head to the hospital."
             #NOTE: Branching path here. Help Sam overcome her past. She'll do this anyway with the song but
             #helping her out early will result in a more confident/powerful song :3
-            "branch path here. fill in later."
 
             #NOTE: After helping Sam have there be yet another branching path! woot! Maybe make this a different
             #line? like... the player can go to the playground or something after looking at the lockers
@@ -82,10 +83,6 @@ label middle_school:
             #with issues at their school relating to inclusivity later!!! as in only visit for this storyline
             #now but after the sam visiting stuff unlock the ability to travel to the hospital and the school
             #in the menu!
-
-            menu:
-                "Move on to the hospital":
-                    jump hospital
 
     jump hospital
             

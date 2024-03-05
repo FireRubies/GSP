@@ -2,8 +2,6 @@ label pride_festival:
     if going_to_festival_with_sam:
         "You go over to Sam's house."
         
-        #Make sure Sam's avatar changes so she's wearing a red dress!
-        show sam red dress
         show sam smile
         sam "You ready?"
 

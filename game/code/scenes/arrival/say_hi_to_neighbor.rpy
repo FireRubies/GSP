@@ -3,7 +3,6 @@ label say_hi_to_neighbor:
     scene sams house
     with dissolve
 
-
     "You approach your neighbor's house.  As you get close to the house you hear sobbing coming from inside the house, and the sound of someone speaking, likely trying to comfort the crying person."
 
     menu:

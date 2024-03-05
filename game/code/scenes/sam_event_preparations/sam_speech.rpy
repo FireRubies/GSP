@@ -23,8 +23,6 @@ label sam_speech:
         "Let's make some noise and get partying!" :
             $ sam_speech += ["Let's make some noise and get partying!"]
 
-    
-    sam "[sam_speech]"
     $ helped_sam_speech = True
 
     sam "Yay! Thanks! We got through everything! I feel really prepared for the pride festival now!"

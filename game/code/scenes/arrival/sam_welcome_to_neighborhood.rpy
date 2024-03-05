@@ -64,24 +64,9 @@ label opened_door:
 
     sam "It's nice to meet you [player_name]!"
 
-    if player_pronouns == "She/Her":
-
-        show michelle frown
-        sam "It's good to have another lady around!"
-        
-        show michelle blush
-        sam "Aw don't worry Mi! Girlfriends for life!"
-
-        "Sam boops Michelle on the nose."
-
-        show michelle neutral
-        sam "Anywayyyyy. If you ever need anything [player_name] then just come over and ask! Oh and here's a map of the town! We circled some of our favorite places for you!"
-
-        you "I'll definitely keep that in mind. Thanks so much!"
-    else:
-        sam "If you ever need anything [player_name] then just come over and ask!"
-        
-        you "I'll definitely keep that in mind. Thanks so much!"
+    sam "If you ever need anything [player_name] then just come over and ask!"
+    
+    you "I'll definitely keep that in mind. Thanks so much!"
 
     you "Oh yeah. Is there anything I can help you guys with? I just got here so I don't really have anything to do."
 

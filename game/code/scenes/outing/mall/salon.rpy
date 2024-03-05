@@ -1,7 +1,5 @@
 label salon:
     scene salon
-    "Salon"
-
-    #Maxi is at the salon getting his nails done.
+    "You see a nicely decorated salon. There doesn't seem to be much here though."
 
     jump mall_location_options

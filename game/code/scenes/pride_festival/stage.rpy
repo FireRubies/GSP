@@ -2,21 +2,32 @@ label stage:
 
     scene stage
 
+    if made_michelle_angry and handled_closet_badly:
+        "Sam didn't show up... everyone leaves, confused and annoyed."
+
+        "Thanks for playing! I really appreciate it! :D"
+        menu:
+            "Keep playing":
+                pass
+
+            "Main Menu":
+                show screen main_menu
+
+        jump pride_festival_options
+
     show sam
     "Sam walks onto the stage."
 
-    sam "Hey everyone! Thank you all for being here tonight."
-
-    # Depending on previous choices, adjust Sam's confidence or nervousness
-    if made_michelle_angry and handled_closet_badly:
-        "Sam didn't show up... everyone leaves, confused and annoyed."
+    python:
+        for i in sam_speech:
+            renpy.say(sam, i)
         
-    elif closet_choices > 1:
+    if closet_choices > 1:
         sam """This song means a lot to me, and I'm thrilled to share it with all of you. I'm trans and I've been transitioning for a while now."
         It's been an incredible journey, and this song reflects a piece of that.
         I hope you all enjoy it!"""
 
-        play music "tropical_summer_music.mp3" volume 0.25
+        play music "sunny.mp3" volume 0.25
 
         """She walked along a winding road, {w=1}{nw}
         Searching for a love untold, {w=1}{nw}
@@ -76,7 +87,7 @@ label stage:
     elif closet_choices < 1:
         sam "T-. This song means a-. a lot to me. so-. so I hope you a-all en-enjoy it!"
 
-        play music "tropical_summer_music.mp3" volume 0.25
+        play music "sunny.mp3" volume 0.25
 
         """She strolled down a lame old path, {w=1}{nw}
         Looking for love, facing the wrath, {w=1}{nw}
@@ -139,15 +150,31 @@ label stage:
 
     # Depending on previous choices, adjust the audience's reaction
     if closet_choices > 1:
-        "audience like."
-        # Audience reacts positively
-        # Show expressions of enjoyment or excitement
-        # Add dialogue from supportive characters cheering Sam on
-    else:
-        "audience less like."
-        # Audience reaction might be more neutral or varied
-        # Show expressions indicating mixed emotions or curiosity
-        # Add dialogue with varied responses from characters
+        "The audience erupts in cheers and applause!"
 
-    #NOTE: REMEMBER TO NOT HAVE SAM SHOW UP IF THE PLAYER HASN'T APLOGIZED TO SAM BEFORE GOING!!!
+        show sam smile at left
+        show jordan smile at right 
+        show liam smile at center
+
+        jay "Yes Sam, work it!"
+        liam "Whoa, I didn't know Sam had it in them!"
+
+    else:
+        "The audience murmurs with a mix of applause, interest, and confusion."
+
+        show sam smile at left
+        show jordan frown at right
+        show liam neutral at center 
+
+        jay "Hmm, that outfit was... a choice."
+        liam "Definitely bold.  I'm curious to see where  Sam takes this." 
+
+    "Thanks for playing! I really appreciate it! :D"
+    menu:
+        "Keep playing":
+            pass
+
+        "Main Menu":
+            show screen main_menu
+
     jump pride_festival_options

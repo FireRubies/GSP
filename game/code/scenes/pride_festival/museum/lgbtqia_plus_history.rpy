@@ -1,5 +1,7 @@
 label lgbtqia_plus_history:
-    #TODO: Achievement for going through all the history options.
+    
+    scene museum
+
     menu lgbtqia_plus_history_options:
         "The Stonewall Riots (June 28, 1969)":
             "In 1969, a riot at the Stonewall Inn (later known as the Stonewall Riots) became a
@@ -15,6 +17,7 @@ label lgbtqia_plus_history:
             if not seen_stonewall_riots:
                 $ seen_stonewall_riots = True
                 $ history_lover.add_progress(1)
+                $ renpy.block_rollback()
 
             jump lgbtqia_plus_history_options
 
@@ -31,6 +34,7 @@ label lgbtqia_plus_history:
             if not seen_harvey_milk:
                 $ seen_harvey_milk = True
                 $ history_lover.add_progress(1)
+                $ renpy.block_rollback()
             
             jump lgbtqia_plus_history_options
 
@@ -44,6 +48,7 @@ label lgbtqia_plus_history:
             if not seen_national_march:
                 $ seen_national_march = True
                 $ history_lover.add_progress(1)
+                $ renpy.block_rollback()
             
             jump lgbtqia_plus_history_options
 
@@ -64,6 +69,7 @@ label lgbtqia_plus_history:
             if not seen_hiv_aids_epidemic:
                 $ seen_hiv_aids_epidemic = True
                 $ history_lover.add_progress(1)
+                $ renpy.block_rollback()
             
             jump lgbtqia_plus_history_options
 
@@ -103,6 +109,7 @@ label lgbtqia_plus_history:
             if not seen_dont_ask_dont_tell:
                 $ seen_dont_ask_dont_tell = True
                 $ history_lover.add_progress(1)
+                $ renpy.block_rollback()
             
             jump lgbtqia_plus_history_options
 
@@ -128,6 +135,7 @@ label lgbtqia_plus_history:
             if not seen_proposition_8:
                 $ seen_proposition_8 = True
                 $ history_lover.add_progress(1)
+                $ renpy.block_rollback()
 
             jump lgbtqia_plus_history_options
 
@@ -153,6 +161,7 @@ label lgbtqia_plus_history:
             if not seen_obergefell_v_hodges:
                 $ seen_obergefell_v_hodges = True
                 $ history_lover.add_progress(1)
+                $ renpy.block_rollback()
 
             jump lgbtqia_plus_history_options
 

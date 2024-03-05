@@ -1,7 +1,7 @@
 label lgbtqia_plus_art:
     #TODO: Achievement for going through all the art options.
 
-    scene art gallery
+    scene museum
     
     menu:
         "The Transformation":
@@ -18,6 +18,7 @@ label lgbtqia_plus_art:
             if not seen_the_transformation:
                 $ seen_the_transformation = True
                 $ art_lover.add_progress(1)
+                $ renpy.block_rollback()
 
         "Self Portrait":
             show self portrait
@@ -32,6 +33,7 @@ label lgbtqia_plus_art:
             if not seen_self_portrait:
                 $ seen_self_portrait = True
                 $ art_lover.add_progress(1)
+                $ renpy.block_rollback()
 
         "The Pride Flag":
             show pride Flag
@@ -43,6 +45,7 @@ label lgbtqia_plus_art:
             if not seen_the_pride_flag:
                 $ seen_the_pride_flag = True
                 $ art_lover.add_progress(1)
+                $ renpy.block_rollback()
 
         "Back to the main museum area":
             jump museum_options

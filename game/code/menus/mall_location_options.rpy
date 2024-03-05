@@ -3,8 +3,6 @@ label mall_location_options:
     scene mall
 
     menu:
-        "Grocer":
-            jump grocer 
 
         "Recording Studio":
             if visited_recording_studio == False:
