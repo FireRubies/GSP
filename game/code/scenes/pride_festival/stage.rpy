@@ -5,15 +5,9 @@ label stage:
     if made_michelle_angry and handled_closet_badly:
         "Sam didn't show up... everyone leaves, confused and annoyed."
 
-        "Thanks for playing! I really appreciate it! :D"
-        menu:
-            "Keep playing":
-                pass
-
-            "Main Menu":
-                show screen main_menu
-
-        jump pride_festival_options
+        jump finished_game
+        
+        #jump pride_festival_options
 
     show sam
     "Sam walks onto the stage."
@@ -170,11 +164,5 @@ label stage:
         liam "Definitely bold.  I'm curious to see where  Sam takes this." 
 
     "Thanks for playing! I really appreciate it! :D"
-    menu:
-        "Keep playing":
-            pass
 
-        "Main Menu":
-            show screen main_menu
-
-    jump pride_festival_options
+    jump finished_game

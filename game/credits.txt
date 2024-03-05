@@ -4,7 +4,9 @@ Sam's music is called "Topical Summer Music" it's from Music Unlimited on Pixaba
 
 The meditation music is called "Wandering" it's from Pixabay on Pixabay.
 
-Used Renpy Graph Vizualiser from EwenQuim to visualize story branches.
+Used Ren'Py Graph Vizualiser from EwenQuim to visualize story branches.
+
+Also thanks to Purple Lizard Man (https://www.tumblr.com/purplelizardman/173357234818/scrolling-credits-in-renpy) for their tutorial on making credits in Ren'Py.
 
 Research:
 
@@ -110,3 +112,6 @@ Self-Portrait (1932) by Claude Cahun; lightsgoingon, CC BY 2.0 (https://creative
 The Transformation (1932) by Lili Elbe; See page for author (https://commons.wikimedia.org/wiki/File:Lili_Elbe_1926.jpg), CC BY 4.0 (https://creativecommons.org/licenses/by/4.0), via Wikimedia Commons
 
 Pride Flag - Paul2520, Public domain, via Wikimedia Commons (https://commons.wikimedia.org/wiki/File:LGBTQ%2B_rainbow_flag_Quasar_%22Progress%22_variant.svg)
+
+Thank you for looking at the credits. I couldn't have made this game without all of these amazing free assets.
+I appreciate you! Thanks again for playing! <3
